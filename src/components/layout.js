@@ -7,12 +7,12 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import UseSiteMetadata from "../hooks/use-sitemetadata"
+import useSiteMetadata from "../hooks/use-sitemetadata"
 import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  const { title } = UseSiteMetadata().siteMetadata;
+  const { title } = useSiteMetadata().siteMetadata;
 
   return (
     <>
