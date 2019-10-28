@@ -9,10 +9,11 @@ import React from "react"
 import PropTypes from "prop-types"
 import useSiteMetadata from "../hooks/use-sitemetadata"
 import Header from "./header"
+import Footer from "./footer"
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  const { title } = useSiteMetadata().siteMetadata;
+  const { title, author } = useSiteMetadata().siteMetadata;
 
   return (
     <>
@@ -26,12 +27,8 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()} Theo Cho. All rights reserved. (Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby)</a>
-        </footer>
       </div>
+      <Footer author={author} />
     </>
   )
 }

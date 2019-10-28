@@ -1,36 +1,25 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 //IndexPage
 export default ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi, I am Theo Cho.</h1>
+    <h1>Hi, I am Theo Cho. I am a web developer.</h1>
     <p>Welcome to my site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <p>Let's build something great.</p>
     <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <div key={node.id}>
-        <Link
-          to={node.fields.slug}
-        >
-          <h3
-               
-              >
-                {node.frontmatter.title}{" "}
-                <span
-                 
-                >
-                  — {node.frontmatter.date}
-                </span>
-              </h3>
-              <p>{node.excerpt}</p>
+        <Link to={node.fields.slug}>
+          <h3>
+            {node.frontmatter.title}{" "}
+            <span>
+              — {node.frontmatter.date}
+            </span>
+          </h3>
+          <p>{node.excerpt}</p>
         </Link>
       </div>
     ))}
