@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import useBlogPost from "../hooks/use-blogPost"
 //IndexPage
-export default () => {
+export default function() {
   const { allMarkdownRemark } = useBlogPost();
 
   return (
@@ -28,5 +28,5 @@ export default () => {
         </div>
       ))}
     </Layout>
-  )
+  );
 }
