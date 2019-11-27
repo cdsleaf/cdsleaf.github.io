@@ -41,7 +41,7 @@ const Layout = ({ children }: LayoutProps) => {
       </MainDiv>
       <Footer author={author} />
     </Container>
-  );
+  )
 }
 
-export default Layout;
+export default Layout

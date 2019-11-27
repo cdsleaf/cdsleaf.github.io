@@ -1,8 +1,8 @@
-import React from "react"
-import { Link } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import useBlogPost from "../hooks/use-blogPost"
+import React from "react";
+import { Link } from "gatsby";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import useBlogPost from "../hooks/use-blogPost";
 //IndexPage
 export default function() {
   const { allMarkdownRemark } = useBlogPost();
@@ -18,10 +18,7 @@ export default function() {
         <div key={node.id}>
           <Link to={node.fields.slug}>
             <h3>
-              {node.frontmatter.title}{" "}
-              <span>
-                — {node.frontmatter.date}
-              </span>
+              {node.frontmatter.title} <span>— {node.frontmatter.date}</span>
             </h3>
             <p>{node.excerpt}</p>
           </Link>

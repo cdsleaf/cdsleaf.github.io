@@ -10,14 +10,14 @@ type BlogPost = {
         frontmatter: {
           title: string;
           date: string;
-        }
+        };
         fields: {
           slug: string;
-        }
+        };
         excerpt: string;
-      }
-    }[]
-  }
+      };
+    }[];
+  };
 };
 
 function useBlogPost(): BlogPost {

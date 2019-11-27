@@ -10,13 +10,13 @@ import Helmet from "react-helmet";
 import useSiteMetadata from "../hooks/use-sitemetadata";
 
 type SeoProps = {
-  description? : string;
+  description?: string;
   lang?: string;
   meta?: [];
   title: string;
 };
 
-function SEO({ description, lang=`en`, meta, title }: SeoProps) {
+function SEO({ description, lang = `en`, meta, title }: SeoProps) {
   const siteMetadata = useSiteMetadata();
 
   const metaDescription = description || siteMetadata.description;

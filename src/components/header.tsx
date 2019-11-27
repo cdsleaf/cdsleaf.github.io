@@ -6,6 +6,7 @@ const StyledHeader = styled.header`
   background: #fcf6f6;
   margin-Bottom: 1.45rem;
   border-bottom: 1px solid lightgray;
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
 `;
@@ -52,8 +53,6 @@ function Header({ siteTitle }: HeaderProps){
         <ul>
           <Link to="/about"><li>About</li></Link>
           <Link to="/blog"><li>Blog</li></Link>
-          <Link to="/portfolio"><li>Portfolio</li></Link>
-          <Link to="/contact"><li>Contact</li></Link>
         </ul>
       </Nav>
     </StyledHeader>
