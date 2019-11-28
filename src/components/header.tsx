@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const StyledHeader = styled.header`
   background: #fcf6f6;
-  margin-Bottom: 1.45rem;
+  margin-bottom: 1.45rem;
   border-bottom: 1px solid lightgray;
   padding: 0 1rem;
   display: flex;
@@ -43,7 +43,7 @@ type HeaderProps = {
   siteTitle: string;
 };
 
-function Header({ siteTitle }: HeaderProps){
+function Header({ siteTitle }: HeaderProps) {
   return (
     <StyledHeader>
       <Home>
@@ -51,8 +51,12 @@ function Header({ siteTitle }: HeaderProps){
       </Home>
       <Nav>
         <ul>
-          <Link to="/about"><li>About</li></Link>
-          <Link to="/blog"><li>Blog</li></Link>
+          <Link to="/blog">
+            <li>Blog</li>
+          </Link>
+          <Link to="/about">
+            <li>About</li>
+          </Link>
         </ul>
       </Nav>
     </StyledHeader>
