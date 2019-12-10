@@ -1,5 +1,4 @@
 import { graphql, useStaticQuery } from "gatsby";
-import { string } from "prop-types";
 
 type BlogPost = {
   allMarkdownRemark: {
