@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{"1GPU":function(n,e,t){"use strict";t.r(e);var a=t("q1tI"),l=t.n(a),o=t("vOnD"),c=t("9Dj+"),i=o.a.h1.withConfig({displayName:"blog__Title",componentId:"bs3jgt-0"})([""]);e.default=function(){return l.a.createElement(c.a,null,l.a.createElement(i,null,"Tech Blog"))}}}]);
+//# sourceMappingURL=component---src-pages-blog-tsx-1d0c7f9059d58fdb5684.js.map
