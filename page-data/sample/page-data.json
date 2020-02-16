@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-templates-blog-post-tsx","path":"/sample/","result":{"data":{"markdownRemark":{"html":"<p>Thsi is a Sample page.</p>","frontmatter":{"title":"Sample Page"}}},"pageContext":{"slug":"/sample/"}}}
+{"componentChunkName":"component---src-templates-blog-post-tsx","path":"/sample/","result":{"data":{"markdownRemark":{"html":"<p>Thsi is a Sample page.!!</p>","frontmatter":{"title":"Sample Page"}}},"pageContext":{"slug":"/sample/"}}}
